@@ -9,7 +9,7 @@ body {
 
 
 .box div {
-    position: absolute;
+    position: fixed;
     width: 60px;
     height: 60px;
     background-color: transparent;
@@ -21,11 +21,13 @@ body {
     top: 30%;
     left: 20%;
     animation: animate 11s linear infinite;
+    position: absolute;
 }
 
 .box div:nth-child(2) {
-    top: 70%;
-    left: 50%;
+    position: absolute;
+    top: 80%;
+    left: 35%;
     animation: animate 7s linear infinite;
 }
 
@@ -39,6 +41,7 @@ body {
     top: 20%;
     left: 60%;
     animation: animate 9s linear infinite;
+    position: absolute;
 }
 
 .box div:nth-child(5) {
@@ -51,25 +54,48 @@ body {
     top: 80%;
     left: 70%;
     animation: animate 12s linear infinite;
+    position: absolute;
 }
 
 .box div:nth-child(7) {
     top: 80%;
     left: 70%;
     animation: animate 12s linear infinite;
+    position: absolute;
 }
 
 .box div:nth-child(8) {
     top: 50%;
-    left: 80%;
+    left: 90%;
     animation: animate 16s linear infinite;
 }
 
 .box div:nth-child(9) {
     top: 20%;
     left: 80%;
-    animation: animate 5s linear infinite;
+    animation: animate 7s linear infinite;
+    position: absolute;
 }
+
+.box div:nth-child(10) {
+    top: 90%;
+    left: 85%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(11) {
+    top: 90%;
+    left: 5%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(12) {
+    top: 10%;
+    left: 90%;
+    animation: animate 10s linear infinite;
+}
+
+
 
 
 @keyframes animate {
@@ -83,6 +109,7 @@ body {
         opacity: 0;
     }
 }
+
 
 .hidden {
     opacity: 0;
@@ -191,17 +218,96 @@ body {
         0.5px 0.5px 0 #000;
 }
 
+.li {
+    color: black;
+    font-size: 25px;
+    font-family: 'Nunito';
+    font-weight: 300;
+    word-wrap: break-word;
+}
 
+.top-heading {
+    max-width: 50%;
+    min-width: 200px;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #42557D;
+}
 
+.name {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: Nunito;
+}
 
-.rectangle {
-    position: fixed;
+.UI-Heading {
+    font-size: 51.13px;
+    font-family: Nunito;
+    font-weight: 200;
+    word-wrap: break-word;
+    padding: 10px;
+}
 
+.anchors {
+    font-family: Nunito;
+    font-size: 25px;
+    background-color: #7994CF;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    cursor: pointer;
+}
 
-    top: 50%;
+.scrollImg {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
 
-    overflow: hidden;
-    /* Clip overflowing content */
-    transition: transform 0.3s ease-in-out;
-    /* Smooth animation */
+.skillsHeading {
+    width: 380px;
+    height: 86.07px;
+    left: 44px;
+    top: 6px;
+    color: black;
+    font-size: 65.93px;
+    font-family: Nunito;
+    font-weight: 300;
+    word-wrap: break-word
+}
+
+.backgroundContainer {
+    background-color: #F9F9F9;
+    margin-top: -35px;
+    padding-bottom: 100px;
+}
+
+.stylesBodyText {
+    width: 380px;
+    height: 86.07px;
+    left: 44px;
+    top: 6px;
+    color: black;
+    font-size: 25.93px;
+    font-family: Nunito;
+    font-weight: 300;
+    word-wrap: break-word
+}
+
+.subSkill {
+    color: black;
+    font-size: 45px;
+    font-family: 'Nunito';
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+.line {
+    width: 200px;
+    height: 2px;
+    background-color: #474747;
+    border-radius: 65px
 }
