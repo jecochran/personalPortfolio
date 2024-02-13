@@ -45,16 +45,22 @@ document.getElementById("LinkedIn").addEventListener('click', function () {
 
 const projectImages = document.querySelectorAll('.projImage');
 
+// Check for screen size using a media query
+const isDesktopOrLaptop = window.matchMedia('(min-width: 768px)');
+
 projectImages.forEach(function (image) {
     const imageElement = image.querySelector('img');
 
-    image.addEventListener("mouseover", function () {
-        imageElement.classList.add("blur");
-    });
+    // Add event listeners only if it's a desktop or laptop
+    if (isDesktopOrLaptop.matches) {
+        image.addEventListener("mouseover", function () {
+            imageElement.classList.add("blur");
+        });
 
-    image.addEventListener("mouseout", function () {
-        imageElement.classList.remove("blur");
-    });
+        image.addEventListener("mouseout", function () {
+            imageElement.classList.remove("blur");
+        });
+    }
 });
 
 
